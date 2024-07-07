@@ -10,7 +10,7 @@ const Index = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io('http://62.146.226.137:3001/');
+    const newSocket = io('ws://socket.3xbuilds.com');
     setSocket(newSocket);
 
     // Clean up the socket connection on component unmount
